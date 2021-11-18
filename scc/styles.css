@@ -144,10 +144,20 @@ body {
 /* -----------------------------------main-------------------------------------------------- */
 /* ---------------------------------Зоголовок---------------------------- */
 .hero {
-  background-color: #2f303a;
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(transparent, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+   margin-left: auto;
+   margin-right: auto ;
 }
-
+  
+}
+}
 .hero-container {
   padding: 200px 237px;
 }
@@ -160,6 +170,8 @@ body {
   color: var(--main-title-color);
   margin-bottom: 30px;
   width: 696px;
+  margin-left: auto;
+  margin-right: auto ;
 }
 
 .hero-button {
@@ -336,6 +348,8 @@ body {
 .button:focus {
   color: var(--btn-acent-color);
   background: #188ce8;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 .portfolio-list {
   display: flex;
@@ -345,6 +359,9 @@ body {
 
 .portfolio-item {
   margin: 15px;
+}
+.portfolio-item:hover{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .items-title {
