@@ -122,6 +122,9 @@ body {
 }
 
 .header-communication-link {
+  display: inline-flex;
+	align-items: center;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -131,12 +134,18 @@ body {
 .header-communication {
   display: flex;
   align-items: center;
+
 }
 
 .header-communication-link:hover,
 .header-communication-link:focus {
   color: var(--accent-color);
 }
+.contacts-items-link{
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .active {
   color: var(--accent-color);
 }
@@ -167,8 +176,8 @@ body {
   color: var(--main-title-color);
   margin-bottom: 30px;
   width: 696px;
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
@@ -297,6 +306,7 @@ body {
 }
 
 .team-item-link {
+  color: #afb1b8;
   width: 100%;
   height: 100%;
   display: block;
@@ -325,6 +335,8 @@ body {
 .team-social-link {
   fill: #afb1b8;
 }
+
+}
 /* ----------------------------Постоянные клиенты ------------------------*/
 .client-title {
   font-weight: 700;
@@ -347,6 +359,8 @@ body {
   border-radius: 4px;
   padding: 14px 32px;
 }
+.client-item-link {
+  color: #afb1b8;}
 
 .client-item-icon {
   fill: currentColor;
