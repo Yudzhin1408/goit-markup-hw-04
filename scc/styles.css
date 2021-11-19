@@ -201,6 +201,21 @@ body {
   margin: auto;
   justify-content: space-between;
 }
+
+.features-items-icon {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+.contacts-link-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .features-subtitle {
   font-weight: 700;
   line-height: 1.14;
@@ -238,8 +253,7 @@ body {
 /* ----------------------------------команда----------------------------- */
 .team {
   text-align: center;
-}
-.team-container {
+  background: #f5f4fa;
 }
 
 .team-title {
@@ -274,13 +288,85 @@ body {
   letter-spacing: 0.03em;
   color: var(--desc-text-color);
   margin-top: 10px;
+}
+.team-item-icons {
+  margin-top: 16px;
   margin-bottom: 30px;
+  width: 44px;
+  height: 44px;
+}
+
+.team-item-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-item-link:hover,
+.team-item-link:focus {
+  background-color: #2196f3;
+}
+.team-item-link:hover .team-social-link,
+.team-item-link:focus .team-social-link {
+  fill: #ffffff;
+}
+
+.team-list-icons {
+  display: flex;
+  justify-content: center;
+}
+.team-item-icons + .team-item-icons {
+  margin-left: 10px;
+}
+
+.team-social-link {
+  fill: #afb1b8;
+}
+/* ----------------------------Постоянные клиенты ------------------------*/
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.client-items li + li {
+  margin-left: 30px;
+}
+.client-items {
+  display: flex;
+}
+.client-item-link {
+  display: inline-block;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 14px 32px;
+}
+
+.client-item-icon {
+  fill: currentColor;
+}
+.client-item-link:hover,
+.client-item-link:active {
+  color: var(--accent-color);
+  fill: currentColor;
+  border-color: var(--link-f-h-color);
 }
 /* ----------------------------------footer----------------------------- */
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-list-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .header-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -312,6 +398,24 @@ body {
 .footer-communication:hover,
 .footer-communication:focus {
   color: var(--accent-color);
+}
+
+.footer-social {
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-social-item {
+  margin-left: 70px;
+}
+.footer-social-color {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.team-social-link-color {
+  fill: #ffffff;
 }
 
 .footer {
@@ -358,7 +462,8 @@ body {
 .portfolio-item {
   margin: 15px;
 }
-.portfolio-item:hover {
+.portfolio-item:hover,
+.portfolio-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
