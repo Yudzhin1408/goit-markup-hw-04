@@ -123,7 +123,7 @@ body {
 
 .header-communication-link {
   display: inline-flex;
-	align-items: center;
+  align-items: center;
 
   font-weight: 500;
   line-height: 1.14;
@@ -134,14 +134,13 @@ body {
 .header-communication {
   display: flex;
   align-items: center;
-
 }
 
 .header-communication-link:hover,
 .header-communication-link:focus {
   color: var(--accent-color);
 }
-.contacts-items-link{
+.contacts-items-link {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -336,7 +335,6 @@ body {
   fill: #afb1b8;
 }
 
-}
 /* ----------------------------Постоянные клиенты ------------------------*/
 .client-title {
   font-weight: 700;
@@ -346,6 +344,7 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+
 .client-items li + li {
   margin-left: 30px;
 }
@@ -360,7 +359,8 @@ body {
   padding: 14px 32px;
 }
 .client-item-link {
-  color: #afb1b8;}
+  color: #afb1b8;
+}
 
 .client-item-icon {
   fill: currentColor;
